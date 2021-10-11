@@ -59,7 +59,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>HZ_PLATFORM_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine/src;$(SolutionDir)GameEngine\vendor\spdlog\include;$(SolutionDir)GameEngine\vendor\GLFW\include;$(SolutionDir)GameEngine\vendor\GLFW</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine/src;$(SolutionDir)GameEngine\vendor\spdlog\include;$(SolutionDir)GameEngine\vendor\GLFW\include;$(SolutionDir)GameEngine\vendor\GLFW;$(SolutionDir)GameEngine\vendor\glad;$(SolutionDir)GameEngine\vendor\glad\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -76,7 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>HZ_PLATFORM_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine/src;$(SolutionDir)GameEngine\vendor\spdlog\include;$(SolutionDir)GameEngine\vendor\GLFW\include;$(SolutionDir)GameEngine\vendor\GLFW</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)GameEngine/src;$(SolutionDir)GameEngine\vendor\spdlog\include;$(SolutionDir)GameEngine\vendor\GLFW\include;$(SolutionDir)GameEngine\vendor\GLFW;$(SolutionDir)GameEngine\vendor\glad;$(SolutionDir)GameEngine\vendor\glad\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

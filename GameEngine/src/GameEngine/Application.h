@@ -5,6 +5,9 @@
 #include"GameEngine/Log.h"
 #include"Layer.h"
 #include"LayerStack.h"
+#include"VertexBuffer.h"
+#include"IndexBuffer.h"
+#include"Core.h"
 namespace GameEngine
 {
 	class HAZEL_API Application
@@ -19,9 +22,12 @@ namespace GameEngine
 		
 	private:
 		std::unique_ptr<Window>m_Window;
+		std::unique_ptr<VertexBuffer>m_VertexBuffer;
+		std::unique_ptr<IndexBuffer>m_IndexBuffer;
 		bool m_Running=true;
 		bool OnWindowClose(Event&);
 		LayerStack m_LayerStack;
+		unsigned int m_VertexArray;
 		
 		
 

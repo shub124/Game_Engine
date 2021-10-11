@@ -1,5 +1,9 @@
 #pragma once
-
+enum class  Renderer_API {
+	None = 0, OpenGL = 1
+};
+#define WINDOWS_MODE 0
+#define CROSS_PLATFORM 1
 #ifdef HZ_PLATFORM_WINDOWS
 	#ifdef HZ_BUILD_DLL
 		#define HAZEL_API __declspec(dllexport)

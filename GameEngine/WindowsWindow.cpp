@@ -1,5 +1,8 @@
 #include "WindowsWindow.h"
 #include "GameEngine/Log.h"
+#include<glad/glad.h>
+
+
 
 namespace GameEngine
 {
@@ -38,6 +41,8 @@ namespace GameEngine
 		m_Window = glfwCreateWindow(props.m_width, props.m_height, props.m_title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
 		glfwSetWindowUserPointer(m_Window, &m_Data);
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		HZ_CORE_ASSERT(status, "Failed to initialize Glad");
 		setVsync(true);
 
 		//Set GLFW callbacks
